@@ -1,0 +1,97 @@
+.color-boxes div {
+    block-size: 70px;
+    width: 100px;
+    margin: 20px;
+   
+}
+footer {
+    border-top: solid;
+    margin-top: 150px;
+
+}
+.black{
+    background-color:#000000 ;
+    color: white;
+}
+.gray{
+    background-color:#232323ff ;
+    color: white;
+}
+.light-gray{
+    background-color:#909090 ;
+    color: black;
+}
+.maroon{
+    background-color:#850000ff ;
+    color: white;
+}
+.white{
+    background-color:#f2f2f2ff ;
+    color: black;
+   
+}
+.logo {
+    width: 190px;
+}
+body {
+    max-width: 700px;
+    margin: auto;
+    background-color:silver ;
+}
+header {
+    display: flex;
+}
+h1 {
+    border-bottom:solid black;
+    font-size: 55px;
+}
+h2 {
+    border-bottom:solid black;
+    max-width: 300px;
+    font-size: 35px;
+}
+h3 {
+    border-bottom:solid black;
+    max-width: 300px;
+    font-size: 25px;
+}
+p {
+    max-width: 300px;
+    font-size: 20px;
+}
+.header{
+    max-width: 200px;
+    font-size: 30px ;
+    font-family: 'Spectral', serif;
+}
+.nav{
+    max-width: 155px;
+    font-size: 25px;
+    font-family: 'Oleo Script', cursive;
+}
+.footer{
+    max-width: 130px;
+    font-size: 20px ;
+    font-family: 'Spectral', serif;
+
+}
+.h1 {
+    max-width: 260px;
+    font-size:55px;
+    font-family: 'Bebas Neue', cursive;
+}
+.h2 {
+    max-width: 240px;
+    font-size:35px;
+    font-family: 'Cinzel', serif;
+}
+.h3{
+    max-width: 210px;
+    font-size:30px;
+    font-family: 'Cinzel', serif;
+}
+.p{
+    max-width: 240px;
+    font-size:25;
+    font-family: 'Spectral', serif;
+}

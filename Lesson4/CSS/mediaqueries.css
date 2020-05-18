@@ -1,0 +1,43 @@
+@media only screen and (min-width: 665px) {
+    nav {
+        display: block;
+        list-style: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        nav {
+            padding-left: 250px;
+            padding-right: 250px;
+            background-color: #850000ff;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -10,3 +10,11 @@ const options1 = {
 };
 document.getElementById("mdate").innerHTML = new Date(document.lastModified).toLocaleDateString('en-US', options1);
 document.getElementById("year").innerHTML = new Date().toLocaleDateString('en-US', options);
+
+WebFont.load({
+    google: {
+      families: [
+         'Roboto'
+      ]
+    }
+  });

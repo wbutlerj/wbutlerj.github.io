@@ -157,14 +157,12 @@ body {
 img {
     max-width: 95%;
 }
-.moon{
-    max-width:820px ;
-}
+
 
 .forcast {
     position: absolute;
-    top: 59px;
-    right: 301px;
+    top: -64px;
+    right: 292px;
     background: radial-gradient(#232323ff,#909090 );
     border: 1px solid #000;
     padding: 0;

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Preston</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="..\Lesson6\CSS-6\css6.css">
+    <link rel="stylesheet" href="..\Lesson6\CSS-6\mediaqueries6.css">
+    <link rel="stylesheet" href="..\Lesson6\JS-6\preston6.js">
+    <link rel="stylesheet" href="stormcenter.js">
+
+</head>
+
+<Body>
+    <header>
+        <h2 onload="pancakes();" id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+            park pavilion!</h2>
+        <div class="top">
+            <img class="logo" src="..\images\DeathStar.png" alt="logo">
+            <h1>Space Weather</h1>
+        </div>
+        <p>"Space Weather provides weather info to those under Intergalactic Empire!"</p>
+
+    </header>
+    <nav>
+        <div class="topnav" id="mytopnav"></div>
+        <ul id="primaryNav" class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <!-- <li><button onclick= "toggleMenu()">&#9776;</button></li> -->
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li> <a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="../HTML/gallery-7.html">Gallery</a></li>
+        </ul>
+        </div>
+
+    </nav>
+    <main>
+      
+
+        <h1>Report a Storm</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top"> Full Name* <input type="text" name="fname"required></label>  
+                <label class="top"> Email* <input type="email" name="email"required placeholder="someon@gmail.com"></label> 
+                <label class="top"> Phone* <input type="tel" name="phone" required placeholder="1235551234"></label> 
+                <label class="top"> Zipcode <input type="number" name="zip" required ></label> 
+                <label class="top"> Storm Date <input type="date" name="date" ></label> 
+            </fieldset>
+                <fieldset>
+                <label for="stormtype">Storm Type:</label>
+                <input list="stormtypes" id="stormtype">
+                <datalist id="stormtypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <label for="vol">Storm Severity (between 1 and 10):</label>
+                <input type="range" id="severity" name="stormSev" min="0" max="10" step="1" list="tickmarks"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            </fieldset>
+            
+                <fieldset>
+                    <legend>Storm Region</legend>
+                    <label class="top"> Storm Region: 
+                        <select name="stormRegion">
+                            <option value ="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend> Danger Level </legend>
+                    
+                   <label class="sbs"> <input type="radio" name="level" value="yes">Yes</label>
+                   <label class="sbs"> <input type="radio" name="level" value="maybe">Maybe</label>
+                   <label class="sbs"> <input type="radio" name="level" value="no">No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea id="comments" name="comment" rows="10" cols="50">
+                        Addiional Information. 
+                    </textarea>
+                </fieldset>
+
+
+                <input type="submit" value="Submit" class="submitBtn">
+        </form>        
+
+          
+
+
+
+
+    </main>
+    <footer>
+        <p class="footerInfo">
+            &copy; Space Weather | Idaho | Weston Jones
+        </p>
+        <p id="date">Today: </p>
+
+    </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="..\Lesson6\JS-6\preston6.js"></script>
+    <script src="stormcenter.js"></script>
+</body>
+
+</html>

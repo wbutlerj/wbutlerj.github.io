@@ -38,3 +38,5 @@ fetch(requestURL)
  
 
 //   image.setAttribute('src', prophets[i].imageurl);
+
+fetch('https://byui-cit230.github.io/weather/data/towndata.json', { name: 'Fish Haven' });

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>index.html</title>
+  <meta charset="utf-8" />
+  <title>Index Page</title>
+  <link rel="stylesheet" href="gallery.css">
+  <!-- <link rel="stylesheet" href="..\Lesson6\CSS-6\mediaqueries6.css"> -->
+  <link rel="stylesheet" href="gallery-mediaQueries.css">
+  <link rel="stylesheet" href="gallery.js">'
+  <link rel="stylesheet" href="lazyload.js">
+  
+</head>
+<body>
+<header>
+    <h2 onload="pancakes();" id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion!</h2>
+    <div class="top">
+        <img class="logo" src="..\images\DeathStar.png" alt="logo">
+        <h1>Space Weather</h1>
+    </div>
+    <p>"Space Weather provides weather info to those under Intergalactic Empire!"</p>
+
+</header>
+<nav>
+    <div class="topnav" id="mytopnav"></div>
+    <ul id="primaryNav" class="navigation">
+        <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <!-- <li><button onclick= "toggleMenu()">&#9776;</button></li> -->
+        <li><a href="index.html">Home</a></li>
+        <li ><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li> <a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+    </ul>
+    </div>
+
+</nav>
+  <main>
+<h2>Weather Gallery</h2>
+<picture>
+    <img data-src="../images/green-misty.jpg" src = "../images/placeholder.jpg"  alt="green misty">
+    <P>Beautiful misty mountains. </P>
+</picture>
+
+<picture>
+    <img data-src="../images/hurricane.jpg" src = "../images/placeholder.jpg" alt="hurricane">
+    <P>Hurricane Palpatine </P>
+</picture>
+<picture>
+    <img data-src="../images/lightning-bolt.jpg" src = "../images/placeholder.jpg" alt="lightning bolt">
+    <P> Thin rain with lightning bolt.</P>
+</picture>
+<picture>
+    <img data-src="../images/lightning.jpg" src = "../images/placeholder.jpg" alt="lightning">
+    <P> Lightning Storm!! </P>
+</picture>
+<picture>
+    <img data-src="../images/misty-mountain.jpg" src = "../images/placeholder.jpg" alt="misty mountain">
+    <P>The beautiful misty tetons. </P>
+</picture>
+<picture>
+    <img data-src="../images/mountain-clouds.jpg" src = "../images/placeholder.jpg" alt="clouds">
+    <P>The beautiful misty tetons 2.0. </P>
+</picture>
+<picture>
+    <img data-src="../images/snowy-brella.jpg" src = "../images/placeholder.jpg" alt="snowy umbrella">
+    <P>It's cold so I brought an umbrella to the snow. </P>
+</picture>
+<picture>
+    <img data-src="../images/straight-clouds.jpg" src = "../images/placeholder.jpg" alt="straight clouds">
+    <P>Cloudy day on Degobah.  </P>
+</picture>
+<picture>
+    <img data-src="../images/trees.jpg" src = "../images/placeholder.jpg" alt="trees">
+    <P>The misty forest walk.  </P>
+</picture>
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <p class="footerInfo">
+        &copy; Space Weather | Idaho | Weston Jones
+    </p>
+    <p id="date">Today: </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="gallery.js"></script>
+  <script src="lazyload.js"> </script>
+</body> 

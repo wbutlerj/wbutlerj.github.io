@@ -1,0 +1,44 @@
+.cities {
+    display:grid ;
+    background-color: white;
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+}
+
+
+@media only screen and (min-width: 665px) {
+.cities{
+    max-width: 800px;
+  margin: .5rem auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.cities:nth-child(odd) img {
+    grid-column:2;
+}
+.cities:nth-child(odd) p {
+    grid-column:1;
+    grid-row: 1;
+}
+
+
+h2{
+    text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    .cities{
+        grid-template-columns: 1fr 1fr 1fr;
+        display:grid ;
+    }
+   
+    
+    section {
+        background-color: white;
+    }
+
+}

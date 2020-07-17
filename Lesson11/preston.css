@@ -1,7 +1,6 @@
 nav {
     margin: 0 auto;
     max-width: auto;
-
     font-family: 'Oleo Script', cursive;
     padding: 0;
     background-color: #850000ff;
@@ -173,7 +172,7 @@ img {
 }
 
 .forcast h2 {
-    margin-top:1 px ;
+    margin-top:1px ;
     margin-bottom:1px ;
 }
 
@@ -198,7 +197,7 @@ img {
 .article h2 {
     margin-right:40%;
     color:#f2f2f2ff;
-    margin:none;
+    margin:0;
     margin-top:0;
 }
 .article h3 {

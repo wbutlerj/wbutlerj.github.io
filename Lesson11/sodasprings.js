@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=fdd85879e660c4d9a4d645008de05e21"
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=fdd85879e660c4d9a4d645008de05e21"
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -35,7 +35,7 @@ fetch(apiURL)
         }
   });
 
-const apiList =  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=509e6c498d583fa4a648cde8caa7b960"
+const apiList =  "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=509e6c498d583fa4a648cde8caa7b960"
   fetch(apiList)
   .then((response) => response.json())
   .then((jsonObject) => {
@@ -78,10 +78,7 @@ const apiList =  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&ap
   function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("responsive");
 }
-function start() {
-    // setActive();
-    pancakes();
-  }
+
 
 //////////
 var d = new Date();
@@ -161,18 +158,8 @@ document.getElementById("date").innerHTML = " " + day + ", " + date + " " + mont
 
 
 
-////////////////////////
-//banner for pancakes
-function pancakes(){
-    var dt = new Date();
-    var nday= dt.getDay();
-if (nday == 5){
-    document.getElementById('banner').style.display = "block";
-}
-else{
-}
-}
-window.onload = start;
+
+
 ////////////////////////
 
 WebFont.load({
@@ -187,30 +174,35 @@ WebFont.load({
   });
 
   
+
+
   const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 
-  fetch(requestURL)
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (jsonObject) {
-          console.table(jsonObject);
-          const towns = jsonObject['towns']; // temporary checking for valid response and data parsing
-  
-          for (let i = 0; i < towns.length; i++) {
-  
-              if (towns[i].name == "Preston"){
-                  let card = document.querySelector('section.preston');
-  
-                  let events = document.createElement('p');
-                  events.textContent =  towns[i].events;
-                  card.appendChild(events);
-  
-                  
-              }
-  
-          }
-      });
-  
-  
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);
+        const towns = jsonObject['towns']; // temporary checking for valid response and data parsing
+
+        for (let i = 0; i < towns.length; i++) {
+
+            if (towns[i].name == "Soda Springs"){
+                let card = document.querySelector('section.springs');
+
+                let events = document.createElement('p');
+                events.textContent =  towns[i].events;
+                card.appendChild(events);
+
+                
+            }
+
+        }
+    });
+
+
+
+
+

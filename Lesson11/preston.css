@@ -243,3 +243,23 @@ td {
       color: white;
       font-size: 19px;
   }
+
+  .cities {
+    background: #111;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+    display: block;
+  }
+
+  .cities p {
+    background: radial-gradient(white,#232323ff );
+    border: 5px solid #000;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #000;
+  }
+
+  .cities h2 {
+    color: #f2f2f2ff;
+  }

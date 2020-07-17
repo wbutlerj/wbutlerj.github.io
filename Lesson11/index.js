@@ -115,11 +115,11 @@ function toggleMenu() {
 }
 
 function start() {
-    // setActive();
+
     pancakes();
 }
 
-//////////
+
 var d = new Date();
 var month;
 var day;
@@ -182,23 +182,11 @@ switch (d.getMonth()) {
 
 }
 document.getElementById("date").innerHTML = " " + day + ", " + date + " " + month + " " + year;
-////////////////////
-// //active navigation class
-// function setActive() {
-//     aObj = document.getElementById('primaryNav').getElementsByTagName('a');
-//     for (i = 0; i < aObj.length; i++) {
-//         if (document.location.href.indexOf(aObj[i].href) >= 0) {
-//             aObj[i].className = 'active';
-
-//         }
-//     }
-// }
 
 
 
 
-////////////////////////
-//banner for pancakes
+
 function pancakes() {
     var dt = new Date();
     var nday = dt.getDay();
@@ -207,7 +195,7 @@ function pancakes() {
     } else {}
 }
 window.onload = start;
-////////////////////////
+
 
 WebFont.load({
     google: {
